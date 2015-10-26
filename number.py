@@ -12,6 +12,18 @@ def isprime(n):
       first += second
       second = 6 - second
    return True
+
+def isprime2(n):
+    if (n > 1):
+    #check for factors
+       for i in range(2,(n)):
+           if ((n % i) == 0):
+               return False
+           else:
+               return True
+       
+    else:
+       return False
  
 def gcd(number, denominator):
     while denominator != 0:
